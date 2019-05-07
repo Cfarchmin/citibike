@@ -1,5 +1,5 @@
-// var newYorkCoords = [40.73, -74.0059];
-// var mapZoomLevel = 12;
+var newYorkCoords = [40.73, -74.0059];
+var mapZoomLevel = 12;
 
 
 
@@ -43,15 +43,6 @@ L.control.layers(baseMaps, overlayMaps, {
   collapsed: false
 }).addTo(myMap);
 
-// Create the createMarkers function
-
-// Pull the "stations" property off of response.data
-
-
-// Create a layer group made from the bike markers array, pass it into the createMap function
-
-
-// Perform an API call to the Citi Bike API to get station information. Call createMarkers when complete
 
 var link = "https://gbfs.citibikenyc.com/gbfs/en/station_information.json"
 
