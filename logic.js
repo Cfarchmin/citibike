@@ -31,11 +31,11 @@ var bikeStations = L.layerGroup(bikeStations);
 
 // Create the map object with options
 var baseMaps = {
-  "Street Map": streetmap
+  "streetMap": streetmap
 };
 
 var overlayMaps = {
-  "Bike Stations": bikeStations
+  "bikeStations": bikeStations
 };
 
 // Create a layer control, pass in the baseMaps and overlayMaps. Add the layer control to the map
@@ -51,7 +51,7 @@ d3.json(link, function (data) {
   data.data.stations.forEach(function (station) {
     L.marker([station.lat, station.lon], {
       stroke: false,
-      fillOpacity: 0.75,
+      fillOpacity: 0.1,
       color: "blue",
       fillColor: "white"
 
